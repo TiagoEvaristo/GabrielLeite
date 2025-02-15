@@ -2,6 +2,10 @@
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
+footer{
+    background-color: #1A1A1A;
+}
+
 /* animate class menu to show slow */
 
 .open {
