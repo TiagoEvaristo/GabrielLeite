@@ -1,0 +1,20 @@
+*{
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* animate class menu to show slow */
+
+.open {
+    animation: animate 0.4s;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
