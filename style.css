@@ -1,5 +1,12 @@
+@font-face {
+    font-family: "Space Grotesk Light";
+    src: url('assets/SpaceGrotesk.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
-    font-family: "Plus Jakarta Sans", sans-serif;
+    font-family: "Space Grotesk Light", "Plus Jakarta Sans", sans-serif;
 }
 
 footer{
