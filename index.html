@@ -12,7 +12,7 @@
 </head>
 <body>
     <div id="container" class="bg-black text-white">
-        <header class="fixed w-full flex justify-between items-center px-10 py-4 bg-yellow-400 sm:px-20">
+        <header class="fixed w-full flex justify-between items-center px-5 py-4 bg-yellow-400 sm:px-20">
             <h1 class="text-2xl text-black font-semibold">Gabriel Leite</h1>
 
             <nav class="hidden sm:block">
@@ -47,34 +47,34 @@
             </ul>   
         </nav>
 
-        <section id="home" class="flex justify-center items-center px-5 pt-30 sm:px-60 py-22">
+        <section id="home" class="flex justify-center items-center sm:px-10 px-5 sm:px-60 sm:py-22 pt-22">
             <article>
                 <h2 class="text-xl text-white font-bold sm:text-4xl">Gabriel Leite</h2>
                 <p class="mt-1 text-xs font-semibold sm:mt-4 sm:text-2xl">Transforme suas finanças com Gabriel Leite</p>
                 <p class="mt-1 text-xs text-gray-300 mb-2 sm:text-1xl">Consultoria Financeira Personalizada e Educação Financeira de Qualidade</p>
-                <a href="https://web.whatsapp.com/send?phone=5511959418981&text=Gostaria de informações sobre a consultoria." target="_blank" class="bg-yellow-400 text-xs py-2 px-5 mt-2 rounded-md text-black cursor-pointer hover:bg-yellow-500 sm:text-1xl">Entre em contato</a>
+                <a href="#" onclick="sendWhatsAppMessage()" target="_blank" class="bg-yellow-400 text-xs py-2 px-5 mt-2 rounded-md text-black cursor-pointer hover:bg-yellow-500 sm:text-1xl">Entrar em contato</a>
             </article>
             <img src="assets/picture_home.png" alt="Foto de Gabriel Leite" class="w-40 h-40 sm:w-100 sm:h-100"/>
         </section>
 
-        <section id="sobre" class="flex justify-center items-center px-10 pb-10 sm:px-60 py-0">
-            <div>
+        <section id="sobre" class="flex justify-center items-center sm:px-10 px-5 pb-10 sm:px-60 h-100 sm:pt-12 py-30">
+            <!-- <div>
                 <img src="assets/picture_sobre.png" alt="Foto de Gabriel Leite">
-            </div>
-            <div class="flex flex-col gap-4 w-100">
+            </div> -->
+            <div class="flex flex-col gap-4 w-full">
                 <article>
-                    <p class="text-sm font-semibold sm:text-1xl">Sobre</p>
+                    <p class="text-sm font-semibold sm:text-3xl">Sobre</p>
                     <p class="text-xs text-gray-300 sm:text-sm">Sou Gabriel Leite, apaixonado pelo mundo das finanças desde os 14 anos. Com uma formação robusta em Administração, MBA em Gestão Comercial de Produtos Financeiros e certificações como CEA, CPA-20 e PCA-10, dedico minha vida a entender, praticar e compartilhar estratégias que geram resultados reais.</p>
                 </article>
                 <article>
-                    <p class="text-sm font-semibold sm:text-1xl">Missão e Propósito</p>
-                    <p class="text-xs text-gray-300 sm:text-sm mb-2">Acredito que a educação financeira transforma vidas. Meu propósito é desmistificar o mercado financeiro e torná-lo acessível para todos. Seja através de consultorias, palestras ou administração de investimentos, meu foco é empoderar você a tomar decisões financeiras mais inteligentes e alinhadas aos seus objetivos.</p>
-                    <a href="https://web.whatsapp.com/send?phone=5511959418981&text=Gostaria mais informações sobre a consultoria." target="_blank" class="bg-yellow-400 text-xs py-2 px-5 rounded-md text-black cursor-pointer hover:bg-yellow-500 sm:text-1xl">Entre em contato</a>
+                    <p class="text-sm font-semibold sm:text-3xl">Missão e Propósito</p>
+                    <p class="text-xs text-gray-300 sm:text-sm mb-6">Acredito que a educação financeira transforma vidas. Meu propósito é desmistificar o mercado financeiro e torná-lo acessível para todos. Seja através de consultorias, palestras ou administração de investimentos, meu foco é empoderar você a tomar decisões financeiras mais inteligentes e alinhadas aos seus objetivos.</p>
+                    <a href="#" onclick="sendWhatsAppMessage()" class="bg-yellow-400 text-xs py-2 px-5 rounded-md text-black cursor-pointer hover:bg-yellow-500 sm:text-1xl">Entrar em contato</a>
                 </article>
             </div>            
         </section>
 
-        <div class="relative isolate bg-black px-6 py-24 sm:py-32 lg:px-8" id="servicos">
+        <div class="relative isolate bg-black px-6 py-10 sm:py-2 lg:px-8" id="servicos">
             <div class="absolute inset-x-0 -top-3 -z-10 transform-gpu overflow-hidden px-36 blur-3xl" aria-hidden="true">
               <div class="mx-auto aspect-1155/678 w-[72.1875rem] bg-linear-to-tr from-[#ff80b5] to-[#9089fc] opacity-30" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
             </div>
@@ -84,97 +84,92 @@
             <div class="mx-auto mt-16 grid max-w-lg grid-cols-1 items-center gap-y-6 sm:mt-20 sm:gap-y-0 lg:max-w-4xl lg:grid-cols-2">
             <!-- produto 1 -->
               <div class="rounded-3xl rounded-t-3xl bg-white p-8 ring-1 ring-gray-900/10 sm:mx-8 sm:rounded-b-none sm:p-10 lg:mx-0 lg:rounded-tr-none lg:rounded-bl-3xl">
-                <h3 id="tier-hobby" class="text-base/7 font-semibold text-black">E-book gratuito</h3>
-                <p class="mt-4 flex items-baseline gap-x-2">
+                <h3 id="tier-hobby" class="text-base/7 font-semibold text-black">📘O Guia Completo dos Investimentos</h3>
+                <!-- <p class="mt-4 flex items-baseline gap-x-2">
                   <span class="text-5xl font-semibold tracking-tight text-black">R$0</span>
                   <span class="text-base text-gray-800">/month</span>
-                </p>
-                <p class="mt-4 text-base/7 text-gray-900">Dê os primeiros passos no mundo <br>dos investimentos, com o meu conteúdo totalmente gratuito.</p>
-                <!-- <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10">
+                </p> -->
+                <p class="mt-4 text-base/7 text-gray-900">Descubra, de forma prática e acessível, os principais fundamentos dos investimentos com este e-book essencial para quem quer assumir o controle das finanças, entender os tipos de ativos e montar uma carteira alinhada aos próprios objetivos. Seja você iniciante ou alguém que deseja se aprofundar na jornada rumo à liberdade financeira.</p>
+                <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-600 sm:mt-10">
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    25 products
+                    Entendimento dos Fundamentos Financeiros
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Up to 10,000 subscribers
+                    Autonomia e Segurança nas Decisões
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Advanced analytics
+                    Diversidade de Opções de Investimento
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-600" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    24-hour support response time
+                    Planejamento Financeiro Inteligente
                   </li>
-                </ul> -->
-                <a href="products/Carteirinha_Digital (1).pdf" download="Iniciando nos investimentos" aria-describedby="tier-hobby" class="mt-8 block rounded-md bg-gray-700 px-3.5 py-2.5 text-center text-sm font-bold text-white shadow-xs hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Baixar</a>
+                </ul>
+                <a href="products/O GUIA COMPLETO DOS INVESTIMENTOS.pdf" download="O Guia Completo dos Investimentos" aria-describedby="tier-hobby" class="mt-8 block rounded-md bg-gray-700 px-3.5 py-2.5 text-center text-sm font-bold text-white shadow-xs hover:bg-gray-600 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Baixar</a>
               </div>
               <div class="relative rounded-3xl bg-gray-900 p-8 ring-1 shadow-2xl ring-gray-900/10 sm:p-10">
-                <h3 id="tier-enterprise" class="text-base/7 font-semibold text-white">Consultoria personalizada</h3>
-                <p class="mt-4 flex items-baseline gap-x-2">
+                <h3 id="tier-enterprise" class="text-base/7 font-semibold text-white">💼Consultoria de Investimentos</h3>
+                <!-- <p class="mt-4 flex items-baseline gap-x-2">
                   <span class="text-5xl font-semibold tracking-tight text-white">R$99</span>
                   <span class="text-base text-gray-200">/month</span>
-                </p>
-                <p class="mt-6 text-base/7 text-gray-300">Faça uma consultoria </p>
+                </p> -->
+                <!-- <p class="mt-6 text-base/7 text-gray-300">Soluções sob medida para o seu patrimônio.</p> -->
+                <p class="mt-6 text-base/7 text-gray-300">Aumente seu potencial de retorno com uma consultoria especializada, personalizada e transparente. Gabriel de Oliveira Leite oferece análise detalhada da sua carteira atual e administração ativa conforme seu perfil de investidor e objetivos financeiros. Com foco em performance, segurança e planejamento de longo prazo, você tem ao seu lado um parceiro estratégico para fazer seu dinheiro trabalhar melhor.</p>
                 <ul role="list" class="mt-8 space-y-3 text-sm/6 text-gray-300 sm:mt-10">
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Unlimited products
+                    Personalização de Estratégia
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Unlimited subscribers
-                  </li>
-                  <!-- <li class="flex gap-x-3">
-                    <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
-                      <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
-                    </svg>
-                    Advanced analytics
+                    Tomada de Decisão Profissional
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Dedicated support representative
+                    Economia de Tempo e Esforço
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Marketing automations
+                    Diversificação Inteligente
                   </li>
                   <li class="flex gap-x-3">
                     <svg class="h-6 w-5 flex-none text-indigo-400" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" data-slot="icon">
                       <path fill-rule="evenodd" d="M16.704 4.153a.75.75 0 0 1 .143 1.052l-8 10.5a.75.75 0 0 1-1.127.075l-4.5-4.5a.75.75 0 0 1 1.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 0 1 1.05-.143Z" clip-rule="evenodd" />
                     </svg>
-                    Custom integrations
-                  </li> -->
+                    Acompanhamento Contínuo e Transparente
+                  </li>
                 </ul>
-                <a href="#" aria-describedby="tier-enterprise" class="mt-8 block rounded-md bg-gray-300 px-3.5 py-2.5 text-center text-sm font-bold text-black shadow-xs hover:bg-gray-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Contratar</a>
+                <a href="#" target="_blank" aria-describedby="tier-enterprise" onclick="sendWhatsAppMessage()" class="mt-8 block rounded-md bg-gray-300 px-3.5 py-2.5 text-center text-sm font-bold text-black shadow-xs hover:bg-gray-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-500 sm:mt-10">Entrar em contato</a>
               </div>
             </div>
           </div>         
           
-          <section id="contato" class="flex justify-center items-center px-5 gap-2 sm:gap-0 sm:px-60 pt-20">
-            <img src="assets/picture_contato.png" alt="Foto de Gabriel Leite" class="h-80 sm:h-120" />
-            <article class="pt-20 sm:pt-50">
-                <p class="text-xs font-semibold sm:text-1xl">Pronto para transformar suas finanças?</p>
-                <p class="text-xs font-semibold sm:text-1xl">Entre em contato hoje mesmo!</p>
-                <p class="text-xs text-gray-300 mb-2 sm:text-sm">Clique no botão para agendar sua consultoria.</p>
-                <a href="https://web.whatsapp.com/send?phone=5511959418981&text=Gostaria mais informações sobre a consultoria." target="_blank" class="bg-yellow-400 text-xs py-2 px-5 mt-2 rounded-md text-black cursor-pointer hover:bg-yellow-500 sm:text-1xl">Agendar</a>
+          <section id="contato" class="flex flex-col sm:flex-row sm:justify-center justify-evenly w-full items-center px-5 py-10 gap-10 sm:gap-0 sm:px-60 pt-10">
+            <img src="assets/Livro 3D.png" alt="Foto de Gabriel Leite" class="h-50 w-50 sm:w-80 sm:h-80 sm:m-10 rounded-full" />
+            <article class="">
+                <p class="text-1xs font-semibold sm:text-3xl py-1">Pronto para transformar suas finanças?</p>
+                <p class="text-xs font-semibold sm:text-1xl py-1">Entre em contato hoje mesmo!</p>
+                <p class="text-xs text-gray-300 mb-2 sm:text-sm py-1">Clique no botão para agendar sua consultoria.</p>
+                <a href="#" onclick="sendWhatsAppMessage()" target="_blank" class="bg-yellow-400 text-xs py-2 px-5 mt-2 rounded-md text-black cursor-pointer hover:bg-yellow-500 sm:text-1xl">Entrar em contato</a>
             </article>
           </section>
 
@@ -188,7 +183,7 @@
                 <div class="ls:mt-5">
                     <p class="text-xs font-semibold sm:text-3xl">Redes Sociais</p>
                     <p class="text-xs text-gray-300 sm:text-sm">Linkedin: <a href="https://www.linkedin.com/in/gabriel-de-oliveira-leite-24320b156/" target="_blank">Gabriel Leite</a></p>
-                    <p class="text-xs text-gray-300 sm:text-sm">Instagram: <a href="https://www.instagram.com/leiteinveste/" target="_blank">@leiteinveste</a></p>
+                    <p class="text-xs text-gray-300 sm:text-sm">Instagram: <a href="https://www.instagram.com/gabriel.oleite/" target="_blank">@gabriel.oleite</a></p>
                 </div>
             </div>
 

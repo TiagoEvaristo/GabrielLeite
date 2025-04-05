@@ -24,3 +24,14 @@ menuButton.addEventListener('click', () => {
     }
     // menu.classList.remove('hidden');
 });
+
+function sendWhatsAppMessage() {
+    defaultPrevented = true;
+
+    const numero = '5511959418981'; // Número com DDI (sem "+" ou espaços)
+    const mensagem = 'Olá! Quero saber mais sobre os seus serviços.';
+    const url = `https://wa.me/${numero}?text=${encodeURIComponent(mensagem)}`;
+
+    window.open(url, '_blank');
+}
+
